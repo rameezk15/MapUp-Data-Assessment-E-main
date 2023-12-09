@@ -1,0 +1,20 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/Users/rameezkhan/Desktop/MapUp-Data-Assessment-E-main/venv
+exec_prefix=/Users/rameezkhan/Desktop/MapUp-Data-Assessment-E-main/venv
+libdir=/Users/rameezkhan/Desktop/MapUp-Data-Assessment-E-main/venv/lib
+includedir=/Users/rameezkhan/Desktop/MapUp-Data-Assessment-E-main/venv/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://tukaani.org/xz/
+Version: 5.4.5
+Cflags: -I${includedir}
+Cflags.private: -DLZMA_API_STATIC
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lpthread
